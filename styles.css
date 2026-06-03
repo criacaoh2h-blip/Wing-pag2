@@ -81,7 +81,7 @@ strong {
   background-image: url("assets/BG-MPR.webp");
   background-position: top center;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: auto;
 }
 
 .hero-inner {
