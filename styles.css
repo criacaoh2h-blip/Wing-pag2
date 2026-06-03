@@ -697,9 +697,9 @@ strong {
 }
 
 .guarantee-seal {
-  width: 40px;
+  width: 28px;
   height: auto;
-  margin: 0 auto 12px;
+  margin: 0 auto 10px;
   filter: drop-shadow(0 0 18px rgb(246 199 91 / 0.24));
 }
 
@@ -1266,8 +1266,8 @@ footer {
   }
 
   .guarantee-seal {
-    width: 40px;
-    margin-bottom: 10px;
+    width: 28px;
+    margin-bottom: 8px;
   }
 
   .total-bonus {
