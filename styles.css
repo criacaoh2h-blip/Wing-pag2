@@ -690,7 +690,7 @@ strong {
 
 .offer-note {
   width: min(440px, 100%);
-  margin-bottom: 28px;
+  margin-top: 24px;
   color: #fafafa;
   font-size: 0.95em;
   font-weight: 700;
