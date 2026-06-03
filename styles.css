@@ -720,11 +720,19 @@ strong {
   width: 58px;
   height: 58px;
   margin-bottom: 10px;
+  border: 1px solid rgb(255 219 126 / 0.35);
   border-radius: 50%;
-  background: linear-gradient(135deg, #ffe29a 0%, #f6c75b 45%, #d59a1b 100%);
-  box-shadow: 0 14px 32px rgb(246 199 91 / 0.28);
+  background: linear-gradient(135deg, rgb(9 8 4 / 0.95) 0%, rgb(28 20 5 / 0.98) 55%, rgb(56 38 8 / 1) 100%);
+  box-shadow: 0 14px 32px rgb(246 199 91 / 0.18);
+  color: #ffd35c;
   font-size: 1.55em;
   line-height: 1;
+}
+
+.guarantee-icon svg {
+  width: 1.15em;
+  height: 1.15em;
+  display: block;
 }
 
 .guarantee-card p {
