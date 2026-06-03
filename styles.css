@@ -718,13 +718,6 @@ strong {
   text-align: center;
 }
 
-.guarantee-seal {
-  width: 48px;
-  height: auto;
-  margin: 0 auto 12px;
-  filter: drop-shadow(0 0 18px rgb(246 199 91 / 0.24));
-}
-
 .tweet-meta {
   display: flex;
   flex-wrap: wrap;
