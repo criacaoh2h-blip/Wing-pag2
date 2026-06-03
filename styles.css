@@ -458,6 +458,14 @@ strong {
   color: #fff8e6;
 }
 
+.bonus-card-icon {
+  width: 58px;
+  height: 58px;
+  margin-bottom: 18px;
+  object-fit: contain;
+  filter: drop-shadow(0 0 16px rgb(246 199 91 / 0.42));
+}
+
 .bonus-card-detail {
   display: flex;
   flex-direction: column;
