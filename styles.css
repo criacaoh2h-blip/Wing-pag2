@@ -269,7 +269,7 @@ strong {
 .cards-grid {
   display: grid;
   width: min(1280px, 100%);
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 20px;
 }
 
@@ -361,10 +361,6 @@ strong {
 
 .cards-grid .scroll-bottom:nth-child(2) {
   transition-delay: 0.12s;
-}
-
-.cards-grid .scroll-bottom:nth-child(3) {
-  transition-delay: 0.24s;
 }
 
 .glass-card.ativo:hover {
