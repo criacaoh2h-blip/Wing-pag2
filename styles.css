@@ -454,6 +454,10 @@ strong {
   box-shadow: 0 0 18px rgb(246 199 91 / 0.55);
 }
 
+.bonus-section .copy-card {
+  text-align: center;
+}
+
 .bonus-section .copy-card p {
   color: #fff8e6;
 }
@@ -461,7 +465,7 @@ strong {
 .bonus-card-icon {
   width: 58px;
   height: 58px;
-  margin-bottom: 18px;
+  margin: 0 auto 18px;
   object-fit: contain;
   filter: drop-shadow(0 0 16px rgb(246 199 91 / 0.42));
 }
@@ -469,7 +473,7 @@ strong {
 .bonus-card-detail {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: center;
   gap: 8px;
 }
 
@@ -481,6 +485,7 @@ strong {
 .bonus-card-price {
   display: inline-flex;
   align-items: baseline;
+  justify-content: center;
   gap: 0.35em;
 }
 
