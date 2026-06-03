@@ -474,6 +474,16 @@ strong {
   line-height: 1.2;
 }
 
+.bonus-card-price {
+  display: inline-flex;
+  align-items: baseline;
+  gap: 0.35em;
+}
+
+.bonus-card-price strong {
+  display: inline;
+}
+
 .copy-inner {
   position: relative;
   z-index: 5;
