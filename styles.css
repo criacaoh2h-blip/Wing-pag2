@@ -924,36 +924,6 @@ strong {
   color: var(--cyan-strong);
 }
 
-.pablo-original-link {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  min-height: 46px;
-  width: 100%;
-  margin-top: 18px;
-  padding: 13px 18px;
-  border: 1px solid rgb(70 230 255 / 0.42);
-  border-radius: 5px;
-  background: rgb(0 4 27 / 0.52);
-  color: #fff;
-  font-size: 0.82em;
-  font-weight: 800;
-  line-height: 1.2;
-  text-align: center;
-  text-transform: uppercase;
-  transition: border-color 0.25s ease, background 0.25s ease;
-}
-
-.pablo-original-link:hover,
-.pablo-original-link:focus-visible {
-  border-color: var(--cyan);
-  background: rgb(42 179 255 / 0.15);
-}
-
-.pablo-original-link--mobile {
-  display: none;
-}
-
 .pablo-scroll {
   max-height: 500px;
   overflow-x: hidden;
@@ -1330,7 +1300,7 @@ footer {
     min-height: 1460px;
     align-items: flex-start;
     border-radius: 40px 40px 0 0;
-    background-image: url("assets/BG-PABLO-MOBILE.webp");
+    background-image: url("assets/BG-EXPERT-MOBILE.webp");
     background-position: top center;
     background-size: contain;
     padding: 380px 1rem 2rem;
@@ -1347,20 +1317,6 @@ footer {
 
   .pablo-card p {
     font-size: 1em;
-  }
-
-  .pablo-original-link {
-    min-height: 44px;
-    padding: 13px 12px;
-    font-size: 0.78em;
-  }
-
-  .pablo-original-link--desktop {
-    display: none;
-  }
-
-  .pablo-original-link--mobile {
-    display: inline-flex;
   }
 
   .pablo-scroll {
