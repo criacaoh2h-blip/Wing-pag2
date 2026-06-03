@@ -38,6 +38,74 @@ document.querySelectorAll(".faq-item button").forEach((button) => {
   });
 });
 
+function initTestimonialCarousel() {
+  const carousel = document.querySelector("[data-testimonial-carousel]");
+  if (!carousel) return;
+
+  const track = carousel.querySelector(".testimonial-track");
+  const slides = Array.from(carousel.querySelectorAll(".testimonial-slide"));
+  const dots = Array.from(carousel.querySelectorAll("[data-testimonial-dot]"));
+  const prev = carousel.querySelector("[data-testimonial-prev]");
+  const next = carousel.querySelector("[data-testimonial-next]");
+  const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  let current = 0;
+  let autoPlay = null;
+
+  function goTo(index) {
+    current = (index + slides.length) % slides.length;
+    track.style.transform = `translateX(-${current * 100}%)`;
+
+    slides.forEach((slide, slideIndex) => {
+      const isActive = slideIndex === current;
+      slide.classList.toggle("is-active", isActive);
+      slide.setAttribute("aria-hidden", isActive ? "false" : "true");
+    });
+
+    dots.forEach((dot, dotIndex) => {
+      const isActive = dotIndex === current;
+      dot.classList.toggle("is-active", isActive);
+      dot.setAttribute("aria-current", isActive ? "true" : "false");
+    });
+  }
+
+  function stopAutoPlay() {
+    if (!autoPlay) return;
+    clearInterval(autoPlay);
+    autoPlay = null;
+  }
+
+  function startAutoPlay() {
+    if (reduceMotion || slides.length < 2) return;
+    stopAutoPlay();
+    autoPlay = setInterval(() => goTo(current + 1), 6500);
+  }
+
+  prev.addEventListener("click", () => {
+    goTo(current - 1);
+    startAutoPlay();
+  });
+
+  next.addEventListener("click", () => {
+    goTo(current + 1);
+    startAutoPlay();
+  });
+
+  dots.forEach((dot, dotIndex) => {
+    dot.addEventListener("click", () => {
+      goTo(dotIndex);
+      startAutoPlay();
+    });
+  });
+
+  carousel.addEventListener("mouseenter", stopAutoPlay);
+  carousel.addEventListener("mouseleave", startAutoPlay);
+  carousel.addEventListener("focusin", stopAutoPlay);
+  carousel.addEventListener("focusout", startAutoPlay);
+
+  goTo(0);
+  startAutoPlay();
+}
+
 function initStars() {
   const canvas = document.getElementById("stars-canvas");
   const wrapper = document.querySelector(".after-cards");
@@ -117,4 +185,5 @@ function initStars() {
   window.addEventListener("resize", resize);
 }
 
+initTestimonialCarousel();
 initStars();

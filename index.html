@@ -112,10 +112,39 @@
 
         <section class="copy-section testimonial-section">
           <div class="copy-inner">
-            <article class="glass-card testimonial-card scroll-bottom">
+            <div class="glass-card testimonial-carousel scroll-bottom" data-testimonial-carousel>
               <h2>O que dizem os <strong>alunos...</strong></h2>
-              <p>“Antes da imersão eu travava toda vez que precisava criar uma cena nova na Wing. Não entendia o roteamento direito e ficava perdido nos buses. Depois de fazer a imersão consegui montar minha primeira cena do zero sem ajuda e o pastor elogiou o som no mesmo culto. Valeu cada centavo.”</p>
-            </article>
+              <div class="testimonial-viewport" aria-live="polite">
+                <div class="testimonial-track">
+                  <article class="testimonial-slide is-active">
+                    <p>“Antes da imersão eu travava toda vez que precisava criar uma cena nova na Wing. Depois das aulas, consegui montar minha primeira cena do zero e operar o culto inteiro com segurança.”</p>
+                    <span>Aluno da Imersão WING</span>
+                  </article>
+                  <article class="testimonial-slide">
+                    <p>“O curso clareou a lógica da mesa. Entendi roteamento, buses, ganho e organização de cena de um jeito prático, sem ficar decorando botão.”</p>
+                    <span>Operador de som em igreja</span>
+                  </article>
+                  <article class="testimonial-slide">
+                    <p>“Eu já mexia na Wing, mas fazia muita coisa por tentativa. A imersão me deu método para equalizar, comprimir e preparar cenas com muito mais confiança.”</p>
+                    <span>Técnico de áudio ao vivo</span>
+                  </article>
+                  <article class="testimonial-slide">
+                    <p>“Depois que apliquei o passo a passo, a banda percebeu a diferença no monitor e eu parei de me perder na hora de corrigir a mix.”</p>
+                    <span>Aluno da turma</span>
+                  </article>
+                </div>
+              </div>
+              <div class="testimonial-controls" aria-label="Controles dos depoimentos">
+                <button class="testimonial-arrow" type="button" data-testimonial-prev aria-label="Depoimento anterior">‹</button>
+                <div class="testimonial-dots">
+                  <button class="is-active" type="button" data-testimonial-dot aria-label="Depoimento 1"></button>
+                  <button type="button" data-testimonial-dot aria-label="Depoimento 2"></button>
+                  <button type="button" data-testimonial-dot aria-label="Depoimento 3"></button>
+                  <button type="button" data-testimonial-dot aria-label="Depoimento 4"></button>
+                </div>
+                <button class="testimonial-arrow" type="button" data-testimonial-next aria-label="Próximo depoimento">›</button>
+              </div>
+            </div>
           </div>
         </section>
 
