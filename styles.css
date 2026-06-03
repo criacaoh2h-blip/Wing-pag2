@@ -835,7 +835,7 @@ strong {
 .checkout-logo {
   display: block;
   height: auto;
-  width: 274px;
+  width: 220px;
   margin-bottom: 28px;
 }
 
@@ -1281,7 +1281,7 @@ footer {
   }
 
   .checkout-logo {
-    width: 76%;
+    width: 62%;
   }
 
   .price {
