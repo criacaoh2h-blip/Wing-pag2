@@ -3,6 +3,8 @@
   --deep: #01041b;
   --cyan: #46e6ff;
   --cyan-strong: #2ab3ff;
+  --danger: #ff3b3b;
+  --danger-strong: #ff6b5f;
   --text: #fafafa;
   --button-a: #70e1df;
   --button-b: #1bc0df;
@@ -341,6 +343,21 @@ strong {
   color: var(--cyan);
   content: "✓";
   font-weight: 900;
+}
+
+.negative-card {
+  border-color: rgb(255 59 59 / 0.38);
+  box-shadow: 0 0 30px rgb(255 59 59 / 0.08);
+}
+
+.negative-card::after {
+  background: linear-gradient(90deg, var(--danger), var(--danger-strong));
+  box-shadow: 0 0 16px rgb(255 59 59 / 0.35);
+}
+
+.negative-card li::before {
+  color: var(--danger-strong);
+  content: "X";
 }
 
 .copy-card p {
