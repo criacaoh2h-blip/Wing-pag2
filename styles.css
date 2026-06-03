@@ -713,6 +713,20 @@ strong {
   text-align: left;
 }
 
+.guarantee-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 58px;
+  height: 58px;
+  margin-bottom: 10px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #ffe29a 0%, #f6c75b 45%, #d59a1b 100%);
+  box-shadow: 0 14px 32px rgb(246 199 91 / 0.28);
+  font-size: 1.55em;
+  line-height: 1;
+}
+
 .guarantee-card p {
   color: #fafafa;
   text-align: center;
@@ -1280,9 +1294,11 @@ footer {
     font-size: 1.7em;
   }
 
-  .guarantee-seal {
-    width: 28px;
+  .guarantee-icon {
+    width: 50px;
+    height: 50px;
     margin-bottom: 8px;
+    font-size: 1.25em;
   }
 
   .total-bonus {
