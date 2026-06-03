@@ -832,20 +832,11 @@ strong {
   backdrop-filter: blur(15px);
 }
 
-.checkout-card img {
-  width: 274px;
-  margin-bottom: 28px;
-}
-
 .checkout-logo {
+  display: block;
+  height: auto;
   width: 274px;
-  align-items: center;
   margin-bottom: 28px;
-  text-align: center;
-}
-
-.checkout-logo strong {
-  font-size: 3.2em;
 }
 
 .price {
@@ -1289,16 +1280,8 @@ footer {
     padding: 2rem 1rem;
   }
 
-  .checkout-card img {
-    width: 76%;
-  }
-
   .checkout-logo {
     width: 76%;
-  }
-
-  .checkout-logo strong {
-    font-size: 2.55em;
   }
 
   .price {
