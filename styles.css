@@ -719,9 +719,9 @@ strong {
 }
 
 .guarantee-seal {
-  width: 64px;
+  width: 48px;
   height: auto;
-  margin: 0 auto 14px;
+  margin: 0 auto 12px;
   filter: drop-shadow(0 0 18px rgb(246 199 91 / 0.24));
 }
 
