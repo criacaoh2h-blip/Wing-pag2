@@ -535,6 +535,25 @@ strong {
   grid-template-columns: repeat(3, minmax(0, 1fr));
 }
 
+@media (min-width: 768px) {
+  .bonus-grid {
+    position: relative;
+    padding-bottom: 18px;
+  }
+
+  .bonus-grid::after {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    height: 3px;
+    border-radius: 999px;
+    background: linear-gradient(90deg, transparent, var(--gold), var(--gold-strong), var(--gold), transparent);
+    box-shadow: 0 0 18px rgb(246 199 91 / 0.45);
+    content: "";
+  }
+}
+
 .stats-row {
   position: relative;
   z-index: 2;
