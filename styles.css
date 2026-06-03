@@ -78,7 +78,7 @@ strong {
 .hero {
   min-height: 800px;
   background-color: #000710;
-  background-image: url("assets/BG-MPR.webp");
+  background-image: url("assets/hero-pc.png");
   background-position: top center;
   background-repeat: no-repeat;
   background-size: auto;
