@@ -736,10 +736,13 @@ strong {
   line-height: 1.55;
 }
 
-.guarantee-seal {
+.guarantee-card .guarantee-seal {
   width: 42px;
+  max-width: 42px;
   height: auto;
+  display: block;
   margin: 0 auto 14px;
+  border-radius: 0;
   filter: drop-shadow(0 0 12px rgb(246 199 91 / 0.24));
 }
 
@@ -1449,8 +1452,9 @@ footer {
     font-size: 1em;
   }
 
-  .guarantee-seal {
+  .guarantee-card .guarantee-seal {
     width: 36px;
+    max-width: 36px;
     margin-bottom: 12px;
   }
 
