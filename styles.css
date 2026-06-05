@@ -174,31 +174,6 @@ strong {
   display: none;
 }
 
-.hero-original-link {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  min-height: 44px;
-  width: 100%;
-  padding: 13px 18px;
-  border: 1px solid rgb(70 230 255 / 0.42);
-  border-radius: 5px;
-  background: rgb(0 4 27 / 0.5);
-  color: #fff;
-  font-size: 0.78em;
-  font-weight: 800;
-  line-height: 1.2;
-  text-align: center;
-  text-transform: uppercase;
-  transition: border-color 0.25s ease, background 0.25s ease;
-}
-
-.hero-original-link:hover,
-.hero-original-link:focus-visible {
-  border-color: var(--cyan);
-  background: rgb(42 179 255 / 0.15);
-}
-
 .cta {
   position: relative;
   z-index: 0;
@@ -1352,10 +1327,6 @@ footer {
   .date-mobile span {
     display: block;
     white-space: nowrap;
-  }
-
-  .hero-original-link {
-    display: none;
   }
 
   .section-heading h2,
