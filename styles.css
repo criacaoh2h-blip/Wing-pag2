@@ -1556,13 +1556,17 @@ footer {
   }
 
   .pablo {
-    min-height: 1460px;
+    min-height: auto;
     align-items: flex-start;
     border-radius: 40px 40px 0 0;
     background-image: url("assets/BG-EXPERT-MOBILE.webp");
     background-position: top center;
     background-size: contain;
-    padding: 380px 1rem 2rem;
+    padding: 380px 1rem 1rem;
+  }
+
+  .guarantee-section {
+    padding-top: 1rem;
   }
 
   .pablo-card {
