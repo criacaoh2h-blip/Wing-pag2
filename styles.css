@@ -501,6 +501,7 @@ strong {
 }
 
 .bonus-section .copy-card {
+  min-height: clamp(220px, 18vw, 270px);
   text-align: center;
 }
 
@@ -1390,6 +1391,10 @@ footer {
   .copy-card {
     min-height: 0;
     padding: 1.5rem;
+  }
+
+  .bonus-section .copy-card {
+    min-height: 0;
   }
 
   .copy-card h3,
