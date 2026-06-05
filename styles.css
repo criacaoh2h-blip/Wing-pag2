@@ -737,8 +737,8 @@ strong {
 }
 
 .guarantee-card .guarantee-seal {
-  width: 64px;
-  max-width: 64px;
+  width: 100px;
+  max-width: 100px;
   height: auto;
   display: block;
   margin: 0 auto 14px;
@@ -1453,8 +1453,8 @@ footer {
   }
 
   .guarantee-card .guarantee-seal {
-    width: 52px;
-    max-width: 52px;
+    width: 100px;
+    max-width: 100px;
     margin-bottom: 12px;
   }
 
