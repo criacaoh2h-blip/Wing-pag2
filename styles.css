@@ -922,9 +922,8 @@ strong {
 
 .checkout-includes {
   display: grid;
-  width: min(480px, 100%);
-  gap: 11px;
-  margin: 22px 0 26px;
+  width: min(500px, 100%);
+  margin: 22px 0 28px;
   padding: 0;
   color: #fafafa;
   font-size: 1em;
@@ -935,13 +934,39 @@ strong {
 
 .checkout-includes li {
   display: grid;
-  grid-template-columns: auto 1fr;
-  gap: 9px;
-  align-items: start;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 18px;
+  align-items: center;
+  padding: 14px 0;
+  border-bottom: 1px dashed rgb(70 230 255 / 0.22);
+}
+
+.checkout-includes li:first-child {
+  padding-top: 0;
+}
+
+.checkout-includes li:last-child {
+  padding-bottom: 0;
+  border-bottom: 0;
+}
+
+.checkout-includes span,
+.checkout-includes strong {
+  line-height: 1.25;
 }
 
 .checkout-includes span {
-  line-height: 1.2;
+  color: #f5fbff;
+  font-weight: 800;
+}
+
+.checkout-includes strong {
+  color: var(--cyan);
+  font-size: 1.08em;
+  font-weight: 900;
+  text-align: right;
+  text-shadow: 0 0 16px rgb(70 230 255 / 0.24);
+  white-space: nowrap;
 }
 
 .checkout-old-price,
@@ -1463,9 +1488,17 @@ footer {
   }
 
   .checkout-includes {
-    gap: 9px;
     margin: 18px 0 22px;
-    font-size: 0.9em;
+    font-size: 0.82em;
+  }
+
+  .checkout-includes li {
+    gap: 10px;
+    padding: 11px 0;
+  }
+
+  .checkout-includes strong {
+    font-size: 1em;
   }
 
   .checkout-old-price {
