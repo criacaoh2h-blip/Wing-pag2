@@ -737,10 +737,10 @@ strong {
 }
 
 .guarantee-seal {
-  width: 72px;
+  width: 42px;
   height: auto;
-  margin: 0 auto 18px;
-  filter: drop-shadow(0 0 18px rgb(246 199 91 / 0.28));
+  margin: 0 auto 14px;
+  filter: drop-shadow(0 0 12px rgb(246 199 91 / 0.24));
 }
 
 .tweet-text {
@@ -1450,8 +1450,8 @@ footer {
   }
 
   .guarantee-seal {
-    width: 58px;
-    margin-bottom: 14px;
+    width: 36px;
+    margin-bottom: 12px;
   }
 
   .tweet-meta {
