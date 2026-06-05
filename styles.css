@@ -736,6 +736,13 @@ strong {
   line-height: 1.55;
 }
 
+.guarantee-seal {
+  width: 72px;
+  height: auto;
+  margin: 0 auto 18px;
+  filter: drop-shadow(0 0 18px rgb(246 199 91 / 0.28));
+}
+
 .tweet-text {
   margin-top: 10px;
   color: #0f1419;
@@ -1440,6 +1447,11 @@ footer {
   .tweet-text,
   .guarantee-card p {
     font-size: 1em;
+  }
+
+  .guarantee-seal {
+    width: 58px;
+    margin-bottom: 14px;
   }
 
   .tweet-meta {
